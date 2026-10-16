@@ -1,0 +1,22 @@
+<%@ include file="/WEB-INF/views/_icons.jspf" %>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <svg class="brand-mark" width="26" height="26" viewBox="0 0 40 40" fill="none">
+        <path d="M20 3C20 3 10 12 10 21a10 10 0 0020 0c0-4-2-6-3.5-8.5.3 3-.8 4.8-2.3 5.6C25 15 24 10 20 3z" fill="#c22a2a"/>
+      </svg>
+      <span class="brand-name">VistorIA</span>
+    </div>
+    <nav class="nav-group">
+      <a class="nav-item ${paginaAtiva == 'dashboard' ? 'active' : ''}" href="${pageContext.request.contextPath}/dashboard">${ic_grid} Dashboard</a>
+      <a class="nav-item ${paginaAtiva == 'edificacoes' ? 'active' : ''}" href="${pageContext.request.contextPath}/edificacoes">${ic_building} Edificações</a>
+      <a class="nav-item ${paginaAtiva == 'plantas' ? 'active' : ''}" href="${pageContext.request.contextPath}/plantas">${ic_layers} Plantas</a>
+      <a class="nav-item ${paginaAtiva == 'vistorias' ? 'active' : ''}" href="${pageContext.request.contextPath}/vistorias">${ic_check} Vistorias</a>
+      <a class="nav-item ${paginaAtiva == 'naoconformidades' ? 'active' : ''}" href="${pageContext.request.contextPath}/naoconformidades">${ic_alert} Não conformidades</a>
+      <a class="nav-item ${paginaAtiva == 'historico' ? 'active' : ''}" href="${pageContext.request.contextPath}/historico">${ic_clock} Histórico</a>
+    </nav>
+    <div class="sidebar-foot">
+      <a class="nav-item" href="${pageContext.request.contextPath}/auth?acao=logout">${ic_out} Sair</a>
+    </div>
+  </aside>
+  <div class="main">
