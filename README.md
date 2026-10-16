@@ -4,6 +4,8 @@
 
 O **VistorIA** é um sistema web para profissionais que fazem vistorias de segurança contra incêndio em edificações (engenheiros, técnicos de segurança, brigadistas). Ele substitui a prancheta e a planilha: o vistoriador cadastra o prédio, marca os equipamentos de combate a incêndio direto na planta baixa, preenche um checklist padronizado e gera um relatório pronto para imprimir ou exportar em PDF.
 
+> **Sobre o nome:** o "IA" de VistorIA aponta para a evolução planejada do projeto, que é usar Inteligência Artificial para processar os dados das vistorias. A versão atual não usa IA, e todo o código foi escrito pelos estudantes, sem ferramentas de IA para programar.
+
 ---
 
 ## O problema que resolvemos
@@ -161,6 +163,7 @@ Este projeto foi a aplicação prática do conteúdo do curso. Nele exercitamos:
 
 Melhorias que identificamos para uma versão futura:
 
+- [ ] **Integrar Inteligência Artificial** para processar os dados das vistorias (a proposta que dá nome ao projeto)
 - [ ] Trocar o hash SHA-256 por **BCrypt** (com salt e custo configurável)
 - [ ] Ler as credenciais do banco de **variáveis de ambiente** em vez de deixá-las no código
 - [ ] Usar um **pool de conexões** (ex.: HikariCP)
@@ -169,16 +172,11 @@ Melhorias que identificamos para uma versão futura:
 - [ ] Otimizar a interface para uso em tablet durante a vistoria em campo
 - [ ] Containerizar com **Docker** (app + MySQL) para facilitar a execução
 
-## Equipe
+## Autor
 
-Projeto desenvolvido por estudantes do **Entra21 — Desenvolvimento Java**:
+**Vilmar Junior** · [@VilmarJ](https://github.com/VilmarJ)
 
-| Nome | GitHub |
-|---|---|
-| Vilmar | [@VilmarJ](https://github.com/VilmarJ) |
-<!-- Adicione os demais integrantes abaixo, no mesmo formato:
-| Nome do integrante | [@usuario](https://github.com/usuario) |
--->
+Estudante do **Entra21 — Desenvolvimento Java**.
 
 ---
 
